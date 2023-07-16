@@ -7,6 +7,7 @@
             <class name="AVTest">
                 <methods>
                     <include name="avTest"/>
+                    <include name="messageTest"/>
                 </methods>
             </class>
         </classes>

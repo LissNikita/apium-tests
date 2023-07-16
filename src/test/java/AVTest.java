@@ -50,4 +50,23 @@ public class AVTest {
 
         Assert.assertTrue(myAdText.isDisplayed());
     }
+
+    @Test
+    public void messageTest() {
+        SelenideElement allowButton = $(By.id("com.android.permissioncontroller:id/permission_allow_button"));
+
+        Waiters.waitUntilClickable(allowButton);
+        allowButton.click();
+
+        SelenideElement clickView = $(By.id("clickView"));
+        clickView.click();
+
+        SelenideElement messageButton = $(By.id("by.av.client:id/dialogs_graph"));
+
+        Waiters.waitUntilClickable(messageButton);
+        messageButton.click();
+
+        SelenideElement img = $(By.id("by.av.client:id/SectionSplash_image"));
+        Assert.assertTrue(img.isDisplayed());
+    }
 }

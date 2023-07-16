@@ -1,0 +1,6 @@
+{
+  "platformName": "Android",
+  "appium:platformVersion": "14.0",
+  "appium:deviceName": "Pixel",
+  "appium:app": "C:/av.apk"
+}

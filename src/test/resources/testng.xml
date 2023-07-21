@@ -3,6 +3,9 @@
 
 <suite name="Appium">
     <test name="Pixel">
+
+        <parameter name="platform" value="android"/>
+
         <classes>
             <class name="AVTest">
                 <methods>
